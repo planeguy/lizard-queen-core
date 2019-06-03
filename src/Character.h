@@ -9,7 +9,7 @@
 struct Character {
     char *name;
 
-    uint_fast8_t skills[SKILS_MAX];
+    uint_fast8_t skills[SKILLS_MAX];
     uint_fast8_t skillInTraining;
     time_t skillTrainingCompletesAt;
 
@@ -20,12 +20,3 @@ struct Character {
 
     uint_fast32_t money;
 };
-
-struct Character loadCharacter(
-    char *name,
-    uint_fast8_t skills[SKILLS_MAX], uint_fast8_t skillInTraining, time_t skillTrainingCompletesAt,
-    struct Item *inventory[INVENTORY_MAX], uint_fast8_t equippedItems[equipslot_COUNT], time_t nextEnchantmentTime,
-    uint_fast32_t money
-);
-
-struct Character newEmptyCharacter();
