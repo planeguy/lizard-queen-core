@@ -1,6 +1,7 @@
 #pragma once
 #include <stdint.h>
 #include <time.h>
+#include <stdbool.h>
 #include "EquipSlot.h"
 #include "definitions.h"
 
