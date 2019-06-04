@@ -6,8 +6,8 @@
 
 struct Fighter {
     struct Character character;
-    uint_fast8_t hp = 100;
-    uint_fast8_t mp = 100;
+    uint_fast8_t hp;
+    uint_fast8_t mp;
     struct Location location;
 };
 
