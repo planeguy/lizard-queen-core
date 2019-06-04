@@ -21,3 +21,5 @@ struct Character {
 
     uint_fast32_t money;
 };
+
+struct Time getNextTrainingCompleteTime(struct Character c, int skill);

@@ -9,8 +9,9 @@ struct Item {
     char *name;
 
     uint_fast8_t skillsMinimum[SKILLS_MAX];
-    uint_fast16_t skilledUseEffects[effecttype_COUNT];
-    uint_fast16_t unskilledUseEffects[effecttype_COUNT];
+    uint_fast16_t skilledUseEffects;
+    uint_fast16_t unskilledUseEffects;
+    int_fast16_t damage;
 
     bool canEquipTo[equipslot_COUNT];
 };

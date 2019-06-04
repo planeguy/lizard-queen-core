@@ -1,15 +1,8 @@
 #pragma once
 
-typedef enum {
-    effecttype_none,
-    effecttype_damage,
-    effecttype_flame,
-    effecttype_freeze,
-    effecttype_shove,
-    effecttype_chasm,
-    effecttype_fireball,
-    effecttype_iceball,
-    effecttype_shoveball,
-    effecttype_hole,
-    effecttype_COUNT
-} EffectType;
+#define EFFECT_FLAME 1
+#define EFFECT_FREEZE 2
+#define EFFECT_PUSH 4
+#define EFFECT_HOLE 8
+#define EFFECT_DAMAGE 16
+
