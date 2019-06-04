@@ -14,7 +14,7 @@ struct Character {
     uint_fast8_t skillInTraining;
     struct Time skillTrainingCompletesAt;
 
-    struct Item *inventory[INVENTORY_MAX];
+    struct Item inventory[INVENTORY_MAX];
     uint_fast8_t equippedItems[equipslot_COUNT];
     bool isSkilledCache[equipslot_COUNT];
     struct Time nextEnchantmentTime;
