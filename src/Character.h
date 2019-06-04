@@ -1,6 +1,7 @@
 #pragma once
 #include <stdint.h>
-#include <time.h>
+#include <stdbool.h>
+#include "cross-platform-time.h"
 #include "EquipSlot.h"
 #include "definitions.h"
 
@@ -11,12 +12,12 @@ struct Character {
 
     uint_fast8_t skills[SKILLS_MAX];
     uint_fast8_t skillInTraining;
-    time_t skillTrainingCompletesAt;
+    struct Time skillTrainingCompletesAt;
 
     struct Item *inventory[INVENTORY_MAX];
     uint_fast8_t equippedItems[equipslot_COUNT];
     bool isSkilledCache[equipslot_COUNT];
-    time_t nextEnchantmentTime;
+    struct Time nextEnchantmentTime;
 
     uint_fast32_t money;
 };
